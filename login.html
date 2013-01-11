@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
+        
+    </head>
+
+<body>
+
+    <div class="wrapper"> <!-- Max width 1366  -->
+    
+    	<!-- Header starts here -->
+        <div class="header">
+            <div class="top_bar">
+                <h1><a href="index.html"><img src="images/logo.png" border="0"></a></h1>	
+                <span class="header_title">Duis Autmn Veil User Defined Value</span>
+                <ul class="top_links">
+                    <li class="user_name">Welcome Guest</li>	
+                    <li class="login_link"><a href="javascript:void(0);" class="login"></a></li>
+                    <li><a href="javascript:void(0);">Contact Support</a></li>
+                    <li><a href="javascript:void(0);">Help</a></li>
+                </ul>
+            </div>
+            
+            <!-- Navigation Bar -->
+            <div class="navigation_bar_login">
+                <div class="left_area">
+                <img src="images/nav_left_login.png">
+                </div>
+		        </div>
+            </div>
+          
+       <!-- Header ends here -->   
+       
+       <!-- Middle area starts here -->
+       <div class="middle_area">
+       		
+            <div class="login_info_block">
+            	<div class="login_panel">
+                	<div class="tabbing">
+                        <span><a href="javascript:void(0);" class="tab1 active">Login</a></span><span class="separator">|</span>
+                        <span><a href="javascript:void(0);" class="tab2 disabled">Job Confirmation</a></span>
+                    </div>
+                
+                	<form class="login_form" action="post" >
+ 
+                    	<fieldset>
+                        	<label for="username">User Name</label><input type="text" name="username">
+                        </fieldset>
+                        
+                        <fieldset>
+                        	 <label for="password">Password</label><input type="text" name="password">
+                        </fieldset>
+                        
+                         <fieldset>
+                             <label for="loginas">Login as</label><select name="loginas"><option>User</option></select>
+                        </fieldset>
+                        
+                        <fieldset class="form_buttons">
+                             <a href="">Forgot Password</a>
+                             <a href="" class="login_button">Login</a>
+                        </fieldset>
+                     </form>
+                     
+                     
+                     
+                     <form class="job_form" action="post" style="display:none;">
+ 
+                    	<fieldset>
+                        	<label for="username">Job ID</label><input type="text" name="username">
+                        </fieldset>
+                        
+                        <fieldset>
+                        	<label for="comments">Comments (Optional)</label><textarea></textarea>
+                        </fieldset>
+                        
+                        <fieldset>
+                        	<label for="confirmedby">By</label><input type="text" name="confirmedby">
+                        </fieldset>
+                        
+                        <fieldset class="form_buttons">
+                            <a href="javascript:void(0);" class="confirm_reject">Confirm</a>
+                             <a href="javascript:void(0);" class="confirm_reject">Reject</a>
+                        </fieldset>
+                     </form>
+                     
+                     
+                     
+                     
+                     
+                    </div>
+               
+                
+                <div class="info_panel">
+                	<div class="content_box">
+                        <img src="images/icon_login_integrated.png" border="0"/>
+                        <div class="content">
+                        <h1>Integrated Application Paging</h1>
+                        <p>Having the right alert management software can mitigate the impact of a problem and speed event resolution.</p>					</div>
+                    </div>
+                    
+                    <div class="content_box">
+                        <img src="images/icon_login_automated.png" border="0"/>
+                        <div class="content">
+                        <h1>Automated Alarm Management</h1>
+                        <p>For greater protection of people and property, the HipLink Alarm Notification Gateway, an automated, wireless notification system.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="content_box">
+                        <img src="images/icon_login_mass.png" border="0"/>
+                        <div class="content">
+                        <h1>Mass Notification</h1>
+                        <p>Whether you need to send emergency notifications to 100 or 10,000 people, or a city, this is field-proven emergency alert system to meet mass notification needs.</p>
+                        </div>
+                    </div>
+                    
+                    
+
+                </div>
+            
+            </div>
+       </div>
+       <!-- Middle ends here -->
+       
+       
+        <!-- footer starts here -->
+       <div class="footer">
+       	 <p>Copyright Information</p>
+       </div>
+       <!-- footer ends here --> 
+          
+        
+    </div>
+    
+	<!-- Scripts would go inside JS file later-->
+	<script>
+	
+	  $(document).ready(function(){
+	  $(".tab1").click(function(){
+		$('.login_form').show();
+		$('.job_form').hide();
+		$(".tab1").removeClass('disabled');
+		$(".tab1").addClass('active');
+		$(".tab2").removeClass('active');
+		$(".tab2").addClass('disabled');
+	  });
+	  
+	  $(".tab2").click(function(){
+		$('.job_form').show();
+		$('.login_form').hide();
+		$(".tab2").removeClass('disabled');
+		$(".tab2").addClass('active');
+		$(".tab1").removeClass('active');
+		$(".tab1").addClass('disabled');
+		
+	  });
+	});
+	<!-- Scripts would go inside JS file later-->
+	</script>
+</body>
+</html>
