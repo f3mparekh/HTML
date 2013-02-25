@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title></title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width">
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/style.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script>
+		 $(document).ready(function() {
+   			
+			
+			
+			$('.open_alert').click(function(){
+				
+				     		
+			if($('.alert_box').css('display') == 'none'){ 
+			  	$('.black_overlay').fadeIn('fast'); 
+			   $('.alert_box').fadeIn('fast'); 
+			} else { 
+			  	$('.black_overlay').hide('fast'); 
+			   $('.alert_box').hide('fast');
+			}
+
+
+
+			
+			})
+			
+			
+			$('.close').click(function(){
+				
+				     		
+			if($('.alert_box').css('display') == 'none'){ 
+			  	$('.black_overlay').fadeIn('fast'); 
+			   $('.alert_box').fadeIn('fast'); 
+			} else { 
+			  	$('.black_overlay').fadeOut('fast'); 
+			   $('.alert_box').fadeOut('fast');
+			}
+
+
+
+			
+			})
+			
+			$('.lnk').click(function(){
+				
+				     		
+			if($('.alert_box').css('display') == 'none'){ 
+			  	$('.black_overlay').fadeIn('fast'); 
+			   $('.alert_box').fadeIn('fast'); 
+			} else { 
+			  	$('.black_overlay').fadeOut('fast'); 
+			   $('.alert_box').fadeOut('fast');
+			}
+			})
+
+		});
+		</script>
+</head>
+
+<body>
+<div class="wrapper"> <!-- Max width 1366  --> 
+  
+  <!-- Header starts here -->
+  <div class="header">
+    <div class="top_bar">
+      <h1><a href="index.html"><img src="images/logo.png" border="0"></a></h1>
+      <span class="header_title">Duis Autmn Veil User Defined Value</span>
+      <ul class="top_links">
+        <li class="user_name">John Doe</li>
+        <li class="login_link"><a href="javascript:void(0);" class="login">Logout</a></li>
+        <li><a href="javascript:void(0);">Contact Support</a></li>
+        <li><a href="javascript:void(0);">Help</a></li>
+      </ul>
+    </div>
+    
+    <!-- Navigation Bar -->
+    <div class="navigation_bar">
+      <div class="left_area"> <img src="images/nav_left_bg.jpg"> </div>
+      <div class="menu">
+        <ul>
+          <li><a href="javascript:void(0);">Profile</a></li>
+          <li><a href="javascript:void(0);">Sys Admin</a></li>
+          <li><a href="javascript:void(0);">Settings</a></li>
+          <li><a href="javascript:void(0);">Recipients</a></li>
+          <li><a href="javascript:void(0);">Send</a>
+            <div class="subnav send_menu">
+              <ul>
+                <li class="title">Send</li>
+                <li><a href="javascript:void(0);">Primary Send</a></li>
+                <li><a href="javascript:void(0);">Voice Send</a></li>
+                <li><a href="javascript:void(0);">Fax Send</a></li>
+                <li><a href="javascript:void(0);">Manual Escalation Send</a></li>
+                <li><a href="javascript:void(0);">Quota Send</a></li>
+                <li><a href="javascript:void(0);">Attribute Send</a></li>
+                <li><a href="javascript:void(0);">Quick Send</a></li>
+              </ul>
+              <ul>
+                <li class="title">Mass Notification</li>
+                <li><a href="javascript:void(0);">Web Signup Notification</a></li>
+                <li><a href="javascript:void(0);">Map Based Notification</a></li>
+                <li class="title">Send Management</li>
+                <li><a href="javascript:void(0);">Campaign Progress</a></li>
+                <li><a href="javascript:void(0);">Confirm Message</a></li>
+                <li><a href="javascript:void(0);">Resend Message</a></li>
+              </ul>
+              <ul>
+                <li class="title">Template</li>
+                <li><a href="javascript:void(0);">Template ABX</a></li>
+                <li><a href="javascript:void(0);">Voice Send</a></li>
+                <li><a href="javascript:void(0);">Fax Send</a></li>
+                <li><a href="javascript:void(0);">Manual Escalation Send</a></li>
+                <li><a href="javascript:void(0);">Quota Send</a></li>
+                <li><a href="javascript:void(0);">Attribute Send</a></li>
+                <li class="button_menu"><a href="javascript:void(0);">View more Templates</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="javascript:void(0);">Queues</a></li>
+          <li><a href="javascript:void(0);">Reports</a></li>
+        </ul>
+        <input type="text" placeholder="i.e.business"/>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Header ends here --> 
+  
+  <!-- Middle area starts here -->
+  <div class="middle_area">
+    <p>Alert Box <a href = "javascript:void(0)" class="open_alert">here</a></p>
+    <div id="light" class="alert_box">
+      <div class="title_bar"> <span>Choose Template</span> <a href = "javascript:void(0)" class="close"></a> </div>
+      
+      <div class="select_template">
+        
+        <div class="template_container">
+        <label>Template</label>
+        <select>
+          <option><-- Select a template --></option>
+          </select>
+          <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla par</span>
+      	</div>
+        </div>
+      
+      <div class="template_message">
+        <div class="message_container">
+        	<span class="message_title">
+            	Message text:
+            </span>
+            <div class="message_description">
+            	WARNING! We will shut down the system at 
+                <select><option>1</option></select>
+                <select><option>:00</option></select>
+                <select><option>AM</option></select>
+                -make sure you save everything BEFORE! <span class="signed_admin">Signed Administrator</span>
+                 
+            </div>
+        </div>
+      </div>
+      <div class="button_area">
+        <div class="button_container"><a href="javascript:void(0);" class="lnk">Cancel</a> <a href="javascript:void(0);" class="btn">Apply</a> </div>
+      </div>
+    </div>
+    <div id="fade" class="black_overlay"></div>
+  </div>
+  <!-- Middle ends here --> 
+  
+  <!-- footer starts here -->
+  <div class="footer">
+    <p>Copyright Information</p>
+  </div>
+  <!-- footer ends here --> 
+  
+</div>
+</body>
+</html>

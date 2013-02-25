@@ -14,7 +14,24 @@
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/style.css">
-         
+        
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+         <script>
+		 $(document).ready(function() {
+   			
+			
+    			
+				//$('.warning').hide();
+				//$('.warning').fadeIn(400);
+				setTimeout( "jQuery('.warning').fadeOut('slow');",2000 );
+			
+			
+			});
+		
+		
+		</script>
+      
+        
     </head>
 
 <body>
@@ -112,8 +129,19 @@
        <!-- Header ends here -->   
        
        <!-- Middle area starts here -->
+        
        <div class="middle_area">
-       	
+       		<div class="notification warning">
+            	<div class="msg_bar">
+                	<span class="warning_icon">
+                    	
+                    </span>
+                    <span class="msg_text">Message will auto hide</span>
+                    
+                </div>
+              
+            </div>
+             
        </div>
        <!-- Middle ends here -->
        

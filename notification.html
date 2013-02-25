@@ -14,7 +14,32 @@
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/style.css">
-         
+        
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+         <script>
+		 $(document).ready(function() {
+   			$('.close_error').click(function(){
+				
+     		$('.error').hide();
+			})
+		});
+		
+		$(document).ready(function() {
+   			$('.close_info').click(function(){
+				
+     		$('.info').hide();
+			})
+		});
+		
+		$(document).ready(function() {
+   			$('.close_warning').click(function(){
+				
+     		$('.warning').hide();
+			})
+		});
+		</script>
+      
+        
     </head>
 
 <body>
@@ -112,8 +137,43 @@
        <!-- Header ends here -->   
        
        <!-- Middle area starts here -->
+        
        <div class="middle_area">
-       	
+       		
+           
+            <div class="notification warning">
+            	<div class="msg_bar">
+                	<span class="warning_icon">
+                    	
+                    </span>
+                    <span class="msg_text">Lorem Ipsum dolor conet, Lorem Ipsum dolor conet</span>
+                    <a href="javascript:void(0);" class="close_warning"><img src="images/ico_close.png" border="0"/></a>
+                </div>
+              
+            </div>
+            
+            
+            <div class="notification error">
+            	<div class="msg_bar">
+                	<span class="error_icon">
+                    	
+                    </span>
+                    <span class="msg_text">Lorem Ipsum dolor conet, Lorem Ipsum dolor conet</span>
+                    <a href="javascript:void(0);" class="close_error"><img src="images/ico_close.png" border="0"/></a>
+                </div>
+              
+            </div>
+            
+             <div class="notification info">
+            	<div class="msg_bar">
+                	<span class="info_icon ">
+                    	
+                    </span>
+                    <span class="msg_text">Lorem Ipsum dolor conet, Lorem Ipsum dolor conet</span>
+                    <a href="javascript:void(0);" class="close_info"><img src="images/ico_close.png" border="0"/></a>
+                </div>
+              
+            </div>
        </div>
        <!-- Middle ends here -->
        
